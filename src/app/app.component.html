@@ -1,0 +1,191 @@
+<main (click)="follow()">
+
+<div id="init" class="animated">
+
+    <h1>What the CORS ?!</h1>
+
+    <h3 id="sign" class="animated">Que signifie CORS </h3>
+    
+    
+    
+    <h3 id="use" class="animated" >En quoi les CORS sont utile </h3>
+
+    
+    <h3 id="exam" class="animated"> Identifier une réponse CORS</h3>
+
+    
+    <h3 id="under" class="animated">Comprendre les CORS</h3>
+    
+
+    
+    <img id="debug" class="animated" src="../assets/debug.gif">
+    
+
+  </div>
+
+  <div id="R1" class="animated">
+
+    <h1 id="signCORS" (click)="signStep()">Que signifie CORS</h1>
+
+    <h3 id="sub1"  class="subs animated">Cross-Origin Resource Sharing</h3>
+
+     <p id=sub2 class="subs animated"><em>
+
+        Le protocole CORS (Cross-Origin Resource Sharing) est un protocole qui permet aux scripts s'exécutant sur un 
+        client de navigateur d'interagir avec des ressources d'une autre origine. 
+
+     </em></p>
+
+
+     <img src="../assets/cat.gif" id="cat">
+
+  </div>
+
+  <div id="R2">
+     
+    <h3 id="R2h3" class="R2h3 animated" (click)="follow2()" >En quoi les CORS sont utiles ? </h3>
+  
+      <p class="subed animated" id="R21">
+      
+         Cela est utile car, grâce à la règle de même origine suivie par XMLHttpRequest et fetch,
+         JavaScript ne peut appeler que des URL ayant la même origine que l'emplacement d'exécution du script.
+        
+      </p>
+
+      <p class="subed animated" id="R22">
+
+          Par exemple, si une application JavaScript souhaite passer un appel AJAX vers une API s'exécutant sur un domaine différent,
+          elle sera bloquée grâce à la stratégie de même origine.
+
+      </p>
+
+      <p class="subed animated" id="R23">
+
+
+    
+          La plupart du temps, un script exécuté dans le navigateur de l'utilisateur n'aurait besoin que d'accéder à des ressources
+          de la même origine (pensez aux appels d'API au même backend qui servait le code JavaScript en premier lieu).
+
+
+      </p>
+
+      <p class="subed animated" id="R24">
+
+          Par conséquent, le fait que JavaScript ne puisse pas normalement accéder à des ressources d'autres origines est une bonne chose pour la sécurité.
+
+
+      </p>
+
+    </div>
+
+
+   <div id="R3" class="animated">
+
+      <h3 id="R3H3" (click)="follow3()" class="animated"> Identifier une réponse CORS</h3>
+      
+    <div id="part1">
+      <p class="r3p">Lorsqu'un serveur a été configuré correctement pour permettre le partage de ressources d'origine croisée, des en-têtes spéciaux sont inclus.</p>
+      
+      <p class="r3p"> Leur présence peut être utilisée pour déterminer qu’une demande prend en charge CORS.</p>
+     
+      <p class="r3p">Les navigateurs Web peuvent utiliser ces en-têtes pour déterminer si un appel XMLHttpRequest doit continuer ou non.</p>
+    
+      <p class="r3p"> Quelques en-têtes peuvent être définis, mais le principal qui détermine qui peut accéder à une ressource est Access-Control-Allow-Origin. </p>
+      
+      
+      <p class="r3p">
+        Cet en-tête spécifie les origines pouvant accéder à la ressource.
+        Par exemple, pour autoriser l'accès à partir de n'importe quelle origine, vous pouvez définir cet en-tête comme suit:
+
+      </p>
+
+      <p id="hide1" class="animated r3p"><strong>Access-Control-Allow-Origin: *</strong></p>
+
+    </div>
+      
+      <p id="hide2" class="animated r3p">Ou il peut être réduit à une origine spécifique: <br><br> 
+      
+        <strong>
+      
+    
+            Access-Control-Allow-Origin: http://www.example.com
+          
+          
+        </strong>
+      
+      </p>
+
+   </div> 
+
+
+   <div id="R4">
+
+      <h3 id="R3H4" (click)="follow4()" class="animated">Comprendre les CORS</h3>
+
+
+      <div id="part3" class="animated">
+
+
+
+      <p class="p3p1">
+
+          Il existe deux types de demandes CORS: les demandes "simples" et les demandes "de contrôle en amont",
+          et c'est le navigateur qui détermine laquelle est utilisée. En tant que développeur,
+          vous n'avez normalement pas à vous soucier de cela lorsque vous créez des demandes à envoyer à un serveur. 
+
+      </p>
+
+
+      <p class="p3p1">
+
+               
+      Cependant, il est possible que différents types de demandes apparaissent dans votre journal réseau et, 
+      dans la mesure où cela peut avoir un impact sur les performances de votre application, 
+      il peut être avantageux de savoir pourquoi et quand ces demandes sont envoyées.
+
+      </p>
+
+
+
+      </div>
+
+      <div id="part4" class="animated">
+
+
+        <h3 class="p4h3">  Requêtes simples (GET, POST et HEAD) </h3>
+
+        <p class="p4p1">Le navigateur considère que la demande est une demande "simple" lorsque la demande elle-même répond à un certain ensemble d'exigences:</p>
+        
+         <ul>
+
+
+          <li class="p4li"> L'une de ces méthodes est utilisée: GET, POST ou HEAD.</li>
+     
+          <li class="p4li">  Un en-tête sécurisé CORS est utilisé</li>
+     
+          <li class="p4li"> Lors de l'utilisation de l'en-tête Content-Type, seules les valeurs suivantes sont autorisées: application / x-www-form-urlencoded, multipart / form-data ou text / plain</li>
+     
+          <li class="p4li">
+                   Aucun écouteur d'événement n'est inscrit sur un objet XMLHttpRequestUpload.
+          </li>
+
+          <li class="p4li">Aucun objet ReadableStream n'est utilisé dans la demande</li>
+
+          <li class="p4li"> La demande est autorisée à continuer normalement si elle répond à ces critères et l'en-tête Access-Control-Allow-Origin est vérifié lorsque la réponse est renvoyée.</li>
+     
+     
+        </ul>
+      
+
+      </div>
+
+      <div id="part5">
+
+        <h1 id="end"> E N D </h1>
+
+      </div>
+
+   </div>
+
+</main>
+

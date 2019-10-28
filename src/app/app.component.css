@@ -1,0 +1,315 @@
+h1
+{
+    font-family: 'Bitter', serif;
+    font-size: 90px;
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    top: 10vh;
+}
+
+
+#sign
+{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transform: rotate(-10deg);
+    text-shadow: 1px 1px 2px black;
+    font-size: 50px; 
+    display: none;
+}
+
+#use
+{
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    transform: rotate(20deg);
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+    display: none;
+}
+
+#exam
+{
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    transform: rotate(20deg);
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+    display: none;
+}
+
+#under
+{
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    transform: rotate(-40deg);
+    text-shadow: 1px 1px 2px black;
+    font-size: 30px;
+    display: none;
+}
+
+#debug
+{
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    height: 40%;
+    
+    
+}
+
+
+
+
+#R1
+{
+    border: 1px solid black;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+#signCORS
+{
+    position: absolute;
+    top: 0%;
+    left: 28%;
+    text-align: center;
+    z-index: 100;
+}
+
+.subs
+{
+    font-family: 'Fira Code', monospace;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+#sub1
+{
+    position: absolute;
+    top: 30%;
+    left: 26.5%;
+    text-align: center;
+    font-size: 50px;
+    display: none;
+}
+
+#sub2
+{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    font-size: 25px;
+    margin: auto;
+    width: 80%;
+    display: none;
+    text-align: center;
+}
+
+#cat
+{
+    height: 600px;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    z-index: 10;
+}
+
+
+
+#R2
+{
+    border: 1px solid black;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+.R2h3
+{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    font-family: 'Bitter', serif;
+    text-align: center;
+    z-index: 100;
+    font-size: 60px;
+}
+
+.subed
+{
+    width: 80%;
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+    text-shadow: 1px 1px 2px black;
+    font-style: italic;
+    position: relative;
+    top: 22%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    display: none;
+}
+
+
+#R3, #R4
+{
+    border: 1px solid black;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+
+
+#R3H3, #R3H4
+{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    font-family: 'Bitter', serif;
+    text-align: center;
+    z-index: 100;
+    font-size: 60px;
+}
+
+#part1
+{
+    position: relative;
+    top: 30%;
+}
+
+.r3p
+{
+    width: 80%;
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+    text-shadow: 1px 1px 2px black;
+    font-style: italic;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    
+}
+
+#hide1, #hide2
+{
+    display: none;
+
+}
+
+#hide2
+{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
+
+.p3p1
+{
+    width: 80%;
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+    text-shadow: 1px 1px 2px black;
+    font-style: italic;
+    position: relative;
+    top: 22%;
+    margin: auto;
+    margin-top: 250px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    
+}
+
+#part4
+{
+    display: none;
+    position: absolute;
+    top: 30%;
+}
+
+#R3H4
+{
+    position: absolute;
+    top: -5%;
+    width: 100%;
+    font-family: 'Bitter', serif;
+    text-align: center;
+    z-index: 100;
+    font-size: 60px;
+}
+
+.p4h3
+{
+    position: absolute;
+    top: -15%;
+    width: 100%;
+    font-family: 'Bitter', serif;
+    text-align: center;
+    z-index: 100;
+    font-size: 40px;
+}
+
+.p4p1
+{
+    width: 80%;
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+    text-shadow: 1px 1px 2px black;
+    font-style: italic;
+    position: relative;
+    top: 22%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.p4li
+{
+   
+    width: 80%;
+    text-align: left;
+    font-family: 'Fira Code', monospace;
+    text-shadow: 1px 1px 2px black;
+    font-style: italic;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+#part5
+{
+    display: none;
+}
+
+#end
+{
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    font-family: 'Bitter', serif;
+    text-align: center;
+    z-index: 100;
+    font-size: 90px;
+
+}
